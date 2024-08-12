@@ -2,9 +2,9 @@ from fastapi import FastAPI
 from bs4 import BeautifulSoup # type: ignore
 import requests # type: ignore
 import datetime
-from Province import province # type: ignore
-from Country import country # type: ignore
-from City import city # type: ignore
+from Details.Province import province # type: ignore
+from Details.Country import country # type: ignore
+from Details.City import city # type: ignore
 
 app = FastAPI()
 
@@ -45,15 +45,15 @@ async def get_city_weather(cname: str, pname: str, tname: str):
         humidity = soup.find(id="humidityValue").get_text(strip=True)
         
         return {
-            'نام شهر': tname,
-            'زمان آخرین بروزرسانی': time,
-            'دمای فعلی': c_temp,
-            'دمای صبح': Morning,
-            'دمای ظهر': Day,
-            'دمای عصر': Evening,
-            'دمای شب': Night,
-            'سرعت باد': wind,
-            'رطوبت': humidity
+            'city_name': tname,
+            'last_update': time,
+            'current_temperature': c_temp,
+            'morning_temperature': Morning,
+            'noon_temperature': Day,
+            'evening_temperature': Evening,
+            'night_temperature': Night,
+            'wind_speed': wind,
+            'humidity': humidity
         }
     
     except Exception as e:

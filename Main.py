@@ -2,9 +2,9 @@ from fastapi import FastAPI
 from bs4 import BeautifulSoup # type: ignore
 import requests # type: ignore
 import datetime
-from Details.Province import province # type: ignore
-from Details.Country import country # type: ignore
-from Details.City import city # type: ignore
+from Data.Province import province # type: ignore
+from Data.Country import country # type: ignore
+from Data.City import city # type: ignore
 
 app = FastAPI()
 

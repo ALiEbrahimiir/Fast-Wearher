@@ -57,7 +57,7 @@ Access the API endpoints in your browser or using a tool like curl or Postman:
 *   for find city name's : http://127.0.0.1:8000/weather/{country_name}/{province_name}/
 
 #### Simple 
-*   https://weather.town/forecast/united-states/california/los-angeles/
+*   http://127.0.0.1:8000/weather/united-states/california/los-angeles/
 
 
 ### Example API Response

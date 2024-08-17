@@ -27,7 +27,7 @@ Utilizes requests and BeautifulSoup for data retrieval and parsing
 ## Installation
 1. Clone the repository:
 ```bash
-https://github.com/ALiEbrahimiir/Fast-Weather.git
+https://github.com/AliEbrX/Fast-Weather.git
 ```
 2. Navigate to the project directory:
 ```bash
